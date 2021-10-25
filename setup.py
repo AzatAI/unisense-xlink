@@ -60,7 +60,7 @@ if sys.argv[-1] == "git":
 # 'setup.py publish' shortcut.
 if sys.argv[-1] == 'upload':
     os.system('python setup.py sdist')
-    os.system('twine upload -r local dist/*')
+    os.system('twine upload dist/*')
     os.system('rm -rf dist')
     os.system('rm -rf *.egg-info')
     sys.exit()
@@ -104,7 +104,6 @@ setup(
         "Development Status :: 5 - Production/Stable",
         "Environment :: Web Environment",
         "Intended Audience :: Developers",
-        "License :: AzatAI License",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
         "Programming Language :: Python :: 3.6",
